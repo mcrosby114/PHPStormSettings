@@ -1,0 +1,14 @@
+<keymap version="1" name="Default copy" parent="Mac OS X 10.5+">
+  <action id="Tool_External Tools_Debug SSH Tunnel to Dev (w Logs)">
+    <keyboard-shortcut first-keystroke="ctrl meta f8" />
+  </action>
+  <action id="Tool_External Tools_NPM Watch Dev">
+    <keyboard-shortcut first-keystroke="ctrl meta f10" />
+  </action>
+  <action id="Tool_External Tools_SSH Tunnel to Dev (w Logs)">
+    <keyboard-shortcut first-keystroke="ctrl meta f9" />
+  </action>
+  <action id="Tool_External Tools_tsync dev">
+    <keyboard-shortcut first-keystroke="ctrl meta f9" />
+  </action>
+</keymap>

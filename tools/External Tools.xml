@@ -1,0 +1,79 @@
+<toolSet name="External Tools">
+  <tool name="tsync dev" description="(see https://git.tsheets.com/plee/releng-scripts) The tsync script is an alternative to setting up a file watcher within PHPStorm. it allows you to make changes to your code tree outside of PHPStorm (e.g. svn up from the command line). Also tsync by default watches and syncs changes to your .svn directory which will eliminate the need for the dreaded svn revert -R * on the remote server." showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="tsync" />
+      <option name="PARAMETERS" value="dev" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/dev/tsync" />
+    </exec>
+  </tool>
+  <tool name="tsync prod" description="(see https://git.tsheets.com/plee/releng-scripts) The tsync script is an alternative to setting up a file watcher within PHPStorm. it allows you to make changes to your code tree outside of PHPStorm (e.g. svn up from the command line). Also tsync by default watches and syncs changes to your .svn directory which will eliminate the need for the dreaded svn revert -R * on the remote server." showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="tsync" />
+      <option name="PARAMETERS" value="prod" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/dev/tsync" />
+    </exec>
+  </tool>
+  <tool name="Debug SSH Tunnel to Dev (w Logs)" description="Opens a reverse tunnel to redirect your port from remote server to port 9000 on localhost." showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
+    <exec>
+      <option name="COMMAND" value="ssh" />
+      <option name="PARAMETERS" value="-nT -R 9062:localhost:9000 lntxweb1.tsheets-dev.com &quot;tail -f /var/log/tsheets-app /var/log/apache2/tsheets.com/error.log | egrep --line-buffered 'mcrosby.tsheets-dev.com'&quot;" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+  <tool name="Debug SSH Tunnel to Shaz (w Logs)" description="Opens a reverse tunnel to redirect your port from remote server to port 9000 on localhost." showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
+    <exec>
+      <option name="COMMAND" value="ssh" />
+      <option name="PARAMETERS" value="-nT -R 9062:localhost:9000 shazdev.tsheets.com &quot;tail -f /var/log/tsheets-app /var/log/apache2/tsheets.com/error.log | egrep --line-buffered 'mcrosby.tsheets.com'&quot;" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/dev/shazdev" />
+    </exec>
+  </tool>
+  <tool name="NPM Watch Dev" description="Runs npm from lntxweb1's .frontend directory in order to build assets w webpack and rebuild on changes" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="npm" />
+      <option name="PARAMETERS" value="run build:all-and-watch-changes" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/dev/lntxweb1/.frontend" />
+    </exec>
+  </tool>
+  <tool name="NPM Watch Shaz" description="Runs npm from shazdev's .frontend directory in order to build assets w webpack and rebuild on changes" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="npm" />
+      <option name="PARAMETERS" value="run build:all-and-watch-changes" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/dev/shazdev/.frontend" />
+    </exec>
+  </tool>
+  <tool name="phpcs" description="php-code-sniffer 2.9" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="true" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="phpcs" />
+      <option name="PARAMETERS" value="--standard=$ProjectFileDir$/include/shared-libs/ts-common/linting/phpcs_ruleset.xml $FilePath$ -s" />
+      <option name="WORKING_DIRECTORY" value="$FileParentDir$" />
+    </exec>
+  </tool>
+  <tool name="NPM Build Dev" description="Runs npm from lntxweb1's .frontend directory in order to build assets w webpack" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="true" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="npm" />
+      <option name="PARAMETERS" value="run build:all-for-distribution" />
+      <option name="WORKING_DIRECTORY" value="~/dev/lntxweb1/.frontend" />
+    </exec>
+  </tool>
+  <tool name="NPM Build Shaz" description="Runs npm from shazdev's .frontend directory in order to build assets w webpack" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="true" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="npm" />
+      <option name="PARAMETERS" value="run build:all-for-distribution" />
+      <option name="WORKING_DIRECTORY" value="~/dev/shazdev/.frontend" />
+    </exec>
+  </tool>
+  <tool name="Debug SSH Tunnel to Dev (no logs)" description="Opens a reverse tunnel to redirect your port from remote server to port 9000 on localhost." showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="true" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
+    <exec>
+      <option name="COMMAND" value="ssh" />
+      <option name="PARAMETERS" value="-nNT -R 9062:localhost:9000 lntxweb1.tsheets-dev.com" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+  <tool name="Debug SSH Tunnel to Shaz (no logs)" description="Opens a reverse tunnel to redirect your port from remote server to port 9000 on localhost." showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="true" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
+    <exec>
+      <option name="COMMAND" value="ssh" />
+      <option name="PARAMETERS" value="-nNT -R 9062:localhost:9000 shazdev.tsheets.com" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+</toolSet>
