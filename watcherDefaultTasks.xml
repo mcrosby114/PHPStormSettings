@@ -40,5 +40,25 @@
       <option name="workingDir" value="" />
       <envs />
     </TaskOptions>
+    <TaskOptions isEnabled="true">
+      <option name="arguments" value="-rlptDvz --delete --exclude=.idea/ --exclude=.ignore --exclude=.svn/ --exclude=include/quickbooks/ --exclude=npm-debug.log /Users/mcrosby2/dev/lntxweb1/ mcrosby@lntxweb1.tsheets-dev.com:/var/www/mcrosby.tsheets-dev.com/" />
+      <option name="checkSyntaxErrors" value="true" />
+      <option name="description" />
+      <option name="exitCodeBehavior" value="ERROR" />
+      <option name="fileExtension" value="*" />
+      <option name="immediateSync" value="true" />
+      <option name="name" value="rsync lntxweb1" />
+      <option name="output" value="" />
+      <option name="outputFilters">
+        <array />
+      </option>
+      <option name="outputFromStdout" value="false" />
+      <option name="program" value="rsync" />
+      <option name="runOnExternalChanges" value="true" />
+      <option name="scopeName" value="All Places" />
+      <option name="trackOnlyRoot" value="false" />
+      <option name="workingDir" value="" />
+      <envs />
+    </TaskOptions>
   </component>
 </application>
