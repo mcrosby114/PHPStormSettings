@@ -40,7 +40,7 @@
       <option name="workingDir" value="" />
       <envs />
     </TaskOptions>
-    <TaskOptions isEnabled="true">
+    <TaskOptions isEnabled="false">
       <option name="arguments" value="-rlptDvz --delete --exclude=.idea/ --exclude=.ignore --exclude=.svn/ --exclude=include/quickbooks/ --exclude=npm-debug.log /Users/mcrosby2/dev/lntxweb1/ mcrosby@lntxweb1.tsheets-dev.com:/var/www/mcrosby.tsheets-dev.com/" />
       <option name="checkSyntaxErrors" value="true" />
       <option name="description" />
