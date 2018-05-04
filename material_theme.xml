@@ -2,11 +2,14 @@
   <component name="MaterialThemeConfig">
     <option name="version" value="2.2.0.1" />
     <option name="selectedTheme" value="MONOKAI" />
-    <option name="highlightColor" value="f7ca0a" />
+    <option name="highlightColor" value="cc9311" />
+    <option name="highlightColorEnabled" value="true" />
     <option name="highlightThickness" value="1" />
     <option name="isContrastMode" value="true" />
+    <option name="isBoldTabs" value="true" />
     <option name="accentColor" value="e8a618" />
     <option name="compactSidebar" value="true" />
+    <option name="statusBarTheme" value="false" />
     <option name="tabsHeight" value="28" />
     <option name="isCompactStatusBar" value="true" />
     <option name="isCompactTables" value="true" />
