@@ -10,6 +10,7 @@
     <entry key="debugger.watches.in.variables" value="false" />
     <entry key="bigger.font.in.project.view" value="true" />
     <entry key="mac.editor.thumb.default.alpha.base" value="0" />
+    <entry key="ide.mac.allowDarkWindowDecorations" value="true" />
     <entry key="mac.editor.thumb.default.alpha.delta" value="102" />
     <entry key="mac.editor.thumb.darcula.alpha.base" value="0" />
     <entry key="mac.editor.thumb.darcula.alpha.delta" value="102" />
