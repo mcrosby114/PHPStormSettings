@@ -1,20 +1,19 @@
 <application>
   <component name="MaterialThemeConfig">
-    <option name="version" value="2.2.0.1" />
+    <option name="version" value="2.2.3.1" />
     <option name="selectedTheme" value="ARC_DARK" />
     <option name="highlightColor" value="cc9311" />
     <option name="highlightColorEnabled" value="true" />
     <option name="highlightThickness" value="1" />
     <option name="isContrastMode" value="true" />
     <option name="isBoldTabs" value="true" />
-    <option name="accentColor" value="e8a618" />
+    <option name="accentColor" value="ffc107" />
     <option name="compactSidebar" value="true" />
     <option name="statusBarTheme" value="false" />
     <option name="tabsHeight" value="28" />
     <option name="isCompactStatusBar" value="true" />
     <option name="isCompactTables" value="true" />
     <option name="customSidebarHeight" value="20" />
-    <option name="accentScrollbars" value="false" />
     <option name="tabOpacity" value="83" />
     <option name="compactDropdowns" value="true" />
   </component>
