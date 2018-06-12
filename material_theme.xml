@@ -1,6 +1,6 @@
 <application>
   <component name="MaterialThemeConfig">
-    <option name="version" value="2.2.3.1" />
+    <option name="version" value="2.4.0.3-2018.1" />
     <option name="selectedTheme" value="ARC_DARK" />
     <option name="highlightColor" value="cc9311" />
     <option name="highlightColorEnabled" value="true" />
@@ -16,5 +16,7 @@
     <option name="customSidebarHeight" value="20" />
     <option name="tabOpacity" value="83" />
     <option name="compactDropdowns" value="true" />
+    <option name="userId" value="-1877e777:163f5e94842:-7fff" />
+    <option name="allowDataCollection" value="true" />
   </component>
 </application>
