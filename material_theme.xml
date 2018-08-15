@@ -19,8 +19,8 @@
     <option name="settingsSelectedTab" value="3" />
     <option name="userId" value="-1877e777:163f5e94842:-7fff" />
     <option name="allowDataCollection" value="true" />
-    <option name="treeFontSizeEnabled" value="true" />
     <option name="isHighContrast" value="true" />
+    <option name="indicatorThickness" value="4" />
     <option name="isWizardShown" value="true" />
   </component>
 </application>
