@@ -1,6 +1,6 @@
 <application>
   <component name="MaterialThemeConfig">
-    <option name="version" value="2.8.0" />
+    <option name="version" value="2.8.2" />
     <option name="highlightColor" value="cc9311" />
     <option name="highlightColorEnabled" value="true" />
     <option name="highlightThickness" value="1" />
