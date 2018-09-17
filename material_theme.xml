@@ -1,11 +1,10 @@
 <application>
   <component name="MaterialThemeConfig">
-    <option name="version" value="2.8.3" />
+    <option name="version" value="2.9.0-pre1" />
     <option name="highlightColor" value="cc9311" />
     <option name="highlightColorEnabled" value="true" />
     <option name="highlightThickness" value="1" />
     <option name="isContrastMode" value="true" />
-    <option name="isBoldTabs" value="true" />
     <option name="accentColor" value="ffc107" />
     <option name="compactSidebar" value="true" />
     <option name="statusBarTheme" value="false" />
